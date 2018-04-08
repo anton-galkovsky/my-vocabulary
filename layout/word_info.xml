@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:measureWithLargestChild="false"
+              android:weightSum="3">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/linearLayout">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="55sp"
+                android:id="@+id/edit_foreign_word" android:layout_weight="1" android:textSize="35sp"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textIsSelectable="false" android:background="@drawable/lime_green_rect"
+                android:paddingLeft="5sp"/>
+        <Button
+                android:layout_width="55sp"
+                android:layout_height="match_parent"
+                android:id="@+id/button_delete"
+                android:background="@drawable/red_rect"
+                android:textSize="28sp"/>
+    </LinearLayout>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/list_translations"
+            android:layout_weight="1"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:id="@+id/group_part_of_speech">
+        <RadioButton
+                android:id="@+id/radio_unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\?" android:layout_weight="1" android:onClick="onClick"/>
+        <RadioButton
+                android:id="@+id/radio_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="n" android:layout_weight="1"
+                android:onClick="onClick"/>
+        <RadioButton
+                android:id="@+id/radio_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="v" android:layout_weight="1"
+                android:onClick="onClick"/>
+        <RadioButton
+                android:id="@+id/radio_adj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="adj" android:layout_weight="1"
+                android:onClick="onClick"/>
+        <RadioButton
+                android:id="@+id/radio_adv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="adv" android:layout_weight="1"
+                android:onClick="onClick"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pr"
+                android:id="@+id/radio_pr" android:layout_weight="1" android:onClick="onClick"/>
+    </RadioGroup>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/list_groups" android:layout_gravity="center_horizontal" android:layout_weight="2"/>
+</LinearLayout>

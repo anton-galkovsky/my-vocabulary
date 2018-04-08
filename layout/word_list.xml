@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:baselineAligned="false" android:clickable="false"
+              android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false"
+              android:measureWithLargestChild="false">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="55sp"
+                android:id="@+id/edit_search"
+                android:imeOptions="actionGo"
+                android:layout_weight="1" android:textSize="35sp" android:singleLine="true"
+                android:background="@drawable/light_green_rect" android:paddingLeft="5sp"/>
+        <Button
+                android:layout_width="55sp"
+                android:layout_height="match_parent"
+                android:id="@+id/button_sort" android:background="@drawable/orange_rect" android:onClick="onClick"/>
+        <Button
+                android:layout_width="55sp"
+                android:layout_height="match_parent"
+                android:id="@+id/button_groups" android:onClick="onClick"
+                android:background="@drawable/cyan_rect"
+                />
+        <Button
+                android:layout_width="55sp"
+                android:layout_height="match_parent"
+                android:id="@+id/button_new" android:onClick="onClick"
+                android:background="@drawable/yellow_rect"
+                />
+    </LinearLayout>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_words"/>
+</LinearLayout>
