@@ -2,10 +2,10 @@ Summer 2017 - current time
 
 # My Vocabulary
 
-Программа представляет собой англо-русский словарь для телефона и обладает максимально минималистичным дизайном (так как писалась для собственного использования). Позволяет:
-* легко заносить новые слова
-* указывать часть речи и вводить несколько переводов для одного и того же слова
-* группировать слова по конкретной теме
-* производить тестирование на обоих языках
+Program represents vocabulary for phone and has a maximally minimalistic design (it was created for own using). Allows:
+* easily add new words
+* specify part of speech and enter several translations for the same word
+* group words by topic
+* test yourself in both languages
 
-Программа дописывается по мере появления необходимости в новой опции; следующим изменением, скорее всего, станет возможность тестирования по каждой группе отдельно 
+The program is appended as the need arises for a new option; the next change is likely to be the possibility of testing for each group separately
